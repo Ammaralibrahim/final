@@ -1,0 +1,12 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+     <form [formGroup]="form" (submit)="submit()" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+       <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">Please  <span class="text-sky-500">Register</span></h1>
+   
+       <input formControlName="name" class="form-control mb-4 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500" placeholder="Name" type="text">
+       <input formControlName="email" class="form-control mb-4 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500" placeholder="Email" type="text">
+       <input formControlName="password" class="form-control mb-4 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500" placeholder="Password" type="password">
+       
+       <button type="submit" class="w-full p-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 focus:outline-none focus:bg-gray-700">Submit</button>
+     </form>
+   </div>
+   

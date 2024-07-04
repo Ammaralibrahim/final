@@ -1,0 +1,9 @@
+<form [formGroup]="resetForm" (ngSubmit)="onSubmit()">
+  <label>Email:</label>
+  <input type="email" formControlName="email" required>
+  <label>Verification Code:</label>
+  <input type="text" formControlName="verificationCode" required>
+  <label>New Password:</label>
+  <input type="password" formControlName="newPassword" required minlength="6">
+  <button type="submit" [disabled]="resetForm.invalid">Reset Password</button>
+</form>

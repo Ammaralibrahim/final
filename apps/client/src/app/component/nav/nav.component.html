@@ -1,0 +1,11 @@
+<nav class="flex justify-between px-20 py-10 items-center bg-white">
+  <h1 class="text-xl text-gray-800 font-bold">SHOP<span class="text-sky-500">AUTH</span></h1>
+  <div class="flex items-center">
+    <ul class="flex items-center space-x-6">
+      <li class="font-semibold text-gray-700"><a href="/login" *ngIf="!authService.isLoggedIn()">Login</a></li>
+      <li class="font-semibold text-gray-700"><a href="/register" *ngIf="!authService.isLoggedIn()">Register</a></li>
+      <li class="font-semibold text-gray-700"><a href="#" (click)="logout()" *ngIf="authService.isLoggedIn()">Logout</a></li>
+      <li class="font-semibold text-gray-700"><a href="/reset" *ngIf="authService.isLoggedIn()">Reset pass</a></li>
+    </ul>
+  </div>
+</nav>
